@@ -39,3 +39,15 @@ D:\Programowanie\SeeOtherwise\SeeOtherwise\SeeOtherwise\obj\Debug\netcoreapp3.1\
 D:\Programowanie\SeeOtherwise\SeeOtherwise\SeeOtherwise\obj\Debug\netcoreapp3.1\Razor\Views\Home\Filter1.cshtml.g.cs
 D:\Programowanie\SeeOtherwise\SeeOtherwise\SeeOtherwise\obj\Debug\netcoreapp3.1\Razor\Views\Home\Filter2.cshtml.g.cs
 D:\Programowanie\SeeOtherwise\SeeOtherwise\SeeOtherwise\obj\Debug\netcoreapp3.1\Razor\Views\Home\Filter3.cshtml.g.cs
+D:\Programowanie\SeeOtherwise\SeeOtherwise\SeeOtherwise\bin\Debug\netcoreapp3.1\System.Web.Razor.dll
+D:\Programowanie\SeeOtherwise\SeeOtherwise\SeeOtherwise\bin\Debug\netcoreapp3.1\Microsoft.Web.Helpers.dll
+D:\Programowanie\SeeOtherwise\SeeOtherwise\SeeOtherwise\bin\Debug\netcoreapp3.1\System.Web.Helpers.dll
+D:\Programowanie\SeeOtherwise\SeeOtherwise\SeeOtherwise\bin\Debug\netcoreapp3.1\System.Web.WebPages.Deployment.dll
+D:\Programowanie\SeeOtherwise\SeeOtherwise\SeeOtherwise\bin\Debug\netcoreapp3.1\System.Web.WebPages.Razor.dll
+D:\Programowanie\SeeOtherwise\SeeOtherwise\SeeOtherwise\bin\Debug\netcoreapp3.1\System.Web.WebPages.dll
+D:\Programowanie\SeeOtherwise\SeeOtherwise\SeeOtherwise\bin\Debug\netcoreapp3.1\WebMatrix.Data.dll
+D:\Programowanie\SeeOtherwise\SeeOtherwise\SeeOtherwise\bin\Debug\netcoreapp3.1\WebMatrix.WebData.dll
+D:\Programowanie\SeeOtherwise\SeeOtherwise\SeeOtherwise\bin\Debug\netcoreapp3.1\Microsoft.IO.RecyclableMemoryStream.dll
+D:\Programowanie\SeeOtherwise\SeeOtherwise\SeeOtherwise\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
+D:\Programowanie\SeeOtherwise\SeeOtherwise\SeeOtherwise\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.dll
+D:\Programowanie\SeeOtherwise\SeeOtherwise\SeeOtherwise\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.Web.dll
