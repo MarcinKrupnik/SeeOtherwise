@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y7qJ+vjz14oABWnHEL8AUj9A8nyBwu/1qf+4JKRBoF2Guf+A4jM992GW2MGm7rqGKpedFIYrBf0jQEkPAP2HGw==",
+  "dgSpecHash": "Zo4oiBp/czHt+/R/ba7i5nZQylYtQpQ4x9bZlS83OTSHvE7tiV3MNwYCFD7tKg7wnOCOmbcJfMVq8JeUvyuL7g==",
   "success": true,
-  "projectFilePath": "D:\\Programowanie\\SeeOtherwise\\SeeOtherwise\\SeeOtherwise\\SeeOtherwise.csproj",
+  "projectFilePath": "C:\\Users\\marci\\Documents\\GitHub\\SeeOtherwise\\SeeOtherwise\\SeeOtherwise.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marci\\.nuget\\packages\\microsoft.aspnet.razor\\3.2.7\\microsoft.aspnet.razor.3.2.7.nupkg.sha512",
     "C:\\Users\\marci\\.nuget\\packages\\microsoft.aspnet.webhelpers\\3.2.7\\microsoft.aspnet.webhelpers.3.2.7.nupkg.sha512",

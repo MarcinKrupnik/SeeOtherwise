@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programowanie\\SeeOtherwise\\SeeOtherwise\\SeeOtherwise\\SeeOtherwise.csproj": {}
+    "C:\\Users\\marci\\Documents\\GitHub\\SeeOtherwise\\SeeOtherwise\\SeeOtherwise.csproj": {}
   },
   "projects": {
-    "D:\\Programowanie\\SeeOtherwise\\SeeOtherwise\\SeeOtherwise\\SeeOtherwise.csproj": {
+    "C:\\Users\\marci\\Documents\\GitHub\\SeeOtherwise\\SeeOtherwise\\SeeOtherwise.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programowanie\\SeeOtherwise\\SeeOtherwise\\SeeOtherwise\\SeeOtherwise.csproj",
+        "projectUniqueName": "C:\\Users\\marci\\Documents\\GitHub\\SeeOtherwise\\SeeOtherwise\\SeeOtherwise.csproj",
         "projectName": "SeeOtherwise",
-        "projectPath": "D:\\Programowanie\\SeeOtherwise\\SeeOtherwise\\SeeOtherwise\\SeeOtherwise.csproj",
+        "projectPath": "C:\\Users\\marci\\Documents\\GitHub\\SeeOtherwise\\SeeOtherwise\\SeeOtherwise.csproj",
         "packagesPath": "C:\\Users\\marci\\.nuget\\packages\\",
-        "outputPath": "D:\\Programowanie\\SeeOtherwise\\SeeOtherwise\\SeeOtherwise\\obj\\",
+        "outputPath": "C:\\Users\\marci\\Documents\\GitHub\\SeeOtherwise\\SeeOtherwise\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marci\\AppData\\Roaming\\NuGet\\NuGet.Config",
