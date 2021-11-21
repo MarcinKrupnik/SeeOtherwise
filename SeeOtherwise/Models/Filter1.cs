@@ -43,7 +43,44 @@ namespace SeeOtherwise.Models
             g.Dispose();
             return newBitmap;
         }
+        
+        public Bitmap EdgeDetection()
+	    {
+	     Bitmap result;
+      // var newBitmap = ToGrayScale();
+	     lock (_imageLock)
+	     {
+	         result = new Bitmap(newBitmap);
+	         var data = result.LockBits(new Rectangle(0, 0, newBitmap.Width, newBitmap.Height),
+	                    ImageLockMode.ReadWrite, PixelFormat.Format24bppRgb);
+	 
+	         var p = (byte*) data.Scan0.ToPointer();
+	         var offset = data.Stride - result.Width * 3;
+	 
+	         for (var i = 0; i < result.Height - 1; i++)
+	         {
+	              for (var j = 0; j < result.Width - 1; j++)
+	              {
+	                   var Gx = (int) Math.Pow(p[0] - (p + 3 + data.Stride)[0], 2);
+	                   var Gy = (int)Math.Pow((p + 3)[0] - (p + data.Stride)[0], 2);
+	 
+	                    var f = Gx + Gy;
+	                    p[0] = p[1] = p[2] = (byte) f;
+	 
+	                    p += 3;
+	               }
+	 
+	               p += offset;
+	         }
+	 
+	         result.UnlockBits(data);
+	     }
+	 
+	     return result;
+	}
     }
+    
+    
     
 }
 
