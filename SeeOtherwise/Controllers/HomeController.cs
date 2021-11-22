@@ -9,12 +9,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Helpers;
+using System.Data.Entity;
+using System.Drawing;
+
 namespace SeeOtherwise.Controllers
 {
     public class HomeController : Controller
     {
         
-        Filter1 filter1;
+        
         public HomeController()
         {
 
@@ -44,9 +47,8 @@ namespace SeeOtherwise.Controllers
         [HttpPost]
         public IActionResult Filter1(Filter1 filter1)
         {
-          
-           
-                
+            
+
             using (StreamWriter sw = new StreamWriter(@"Save.txt"))
             {
 
@@ -55,9 +57,10 @@ namespace SeeOtherwise.Controllers
             }
             ViewBag.Photo = filter1.Photo;
             return View("filter1w");
-           
+            //Bitmap image1 = new Bitmap(filter1.Photo);
+
         }
-     
+       
 
         public IActionResult Filter2()
         {
@@ -67,9 +70,8 @@ namespace SeeOtherwise.Controllers
         {
             return View();
         }
-        [HttpPost]
-        
 
+      
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
