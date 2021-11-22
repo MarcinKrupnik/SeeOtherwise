@@ -13,12 +13,8 @@ namespace SeeOtherwise.Models
     {
 
         public string Photo { get; set; }
-        public Filter1(string photo)
-        {
-            
-            Photo = photo;
-
-        }
+      
+        
     }
     
 }

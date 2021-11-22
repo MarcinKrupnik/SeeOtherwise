@@ -4,6 +4,7 @@ using SeeOtherwise.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
@@ -16,10 +17,9 @@ namespace SeeOtherwise.Controllers
         Filter1 filter1;
         public HomeController()
         {
-           
-           
-            this.filter1 = new Filter1("~/Photo.jpg");
-            new Filter1("~/Photo.jpg");
+
+            
+       
         }
 
         public IActionResult Index()
@@ -31,11 +31,34 @@ namespace SeeOtherwise.Controllers
         {
             return View();
         }
+    
+        [HttpGet]
         public IActionResult Filter1()
         {
-            Filter1 filter1= this.filter1;
-            return View(filter1);
+
+
+            return View();
+
         }
+
+        [HttpPost]
+        public IActionResult Filter1(Filter1 filter1)
+        {
+          
+           
+                
+            using (StreamWriter sw = new StreamWriter(@"Save.txt"))
+            {
+
+                sw.WriteLine(filter1.Photo);
+
+            }
+            ViewBag.Photo = filter1.Photo;
+            return View("filter1w");
+           
+        }
+     
+
         public IActionResult Filter2()
         {
             return View();
@@ -44,12 +67,15 @@ namespace SeeOtherwise.Controllers
         {
             return View();
         }
-     
+        [HttpPost]
+        
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
     }
 }

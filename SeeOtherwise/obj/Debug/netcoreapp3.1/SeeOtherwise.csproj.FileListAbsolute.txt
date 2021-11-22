@@ -104,3 +104,4 @@ C:\Users\marci\Documents\GitHub\SeeOtherwise\SeeOtherwise\obj\Debug\netcoreapp3.
 C:\Users\marci\Documents\GitHub\SeeOtherwise\SeeOtherwise\obj\Debug\netcoreapp3.1\SeeOtherwise.pdb
 C:\Users\marci\Documents\GitHub\SeeOtherwise\SeeOtherwise\obj\Debug\netcoreapp3.1\SeeOtherwise.genruntimeconfig.cache
 C:\Users\marci\Documents\GitHub\SeeOtherwise\SeeOtherwise\obj\Debug\netcoreapp3.1\SeeOtherwise.csproj.CopyComplete
+C:\Users\marci\Documents\GitHub\SeeOtherwise\SeeOtherwise\obj\Debug\netcoreapp3.1\Razor\Views\Home\Filter1w.cshtml.g.cs
