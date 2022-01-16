@@ -9,3 +9,6 @@
 <div>
 <img src="@Url.Content(@ViewBag.Photo)" />
 </div>
+<div>
+    <img src="@String.Format("data:image/png;base64,{0}", Convert.ToBase64String(@ViewBag.Bitmapa))" />
+</div>

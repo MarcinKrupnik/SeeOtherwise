@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Helpers;
-using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.Processing;
+using System.Drawing;
+using System.Drawing.Imaging;
 
 namespace SeeOtherwise.Models
 {
@@ -13,8 +13,7 @@ namespace SeeOtherwise.Models
     {
 
         public string Photo { get; set; }
-      
-        
+        public byte[] Bitmapa { get; set; }
     }
     
 }

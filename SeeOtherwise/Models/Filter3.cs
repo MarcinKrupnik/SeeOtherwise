@@ -7,5 +7,8 @@ namespace SeeOtherwise.Models
 {
     public class Filter3
     {
+
+        public string Photo { get; set; }
+        public byte[] Bitmapa { get; set; }
     }
 }

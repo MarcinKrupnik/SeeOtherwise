@@ -40,21 +40,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[6.4.4, )"
-            },
             "Microsoft.AspNet.WebHelpers": {
               "target": "Package",
               "version": "[3.2.7, )"
-            },
-            "SixLabors.ImageSharp": {
-              "target": "Package",
-              "version": "[1.0.4, )"
-            },
-            "SixLabors.ImageSharp.Web": {
-              "target": "Package",
-              "version": "[1.0.4, )"
             },
             "System.Drawing.Common": {
               "target": "Package",

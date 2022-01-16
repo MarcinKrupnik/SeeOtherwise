@@ -1,135 +1,37 @@
-﻿<style>
-    body {
-        background: linear-gradient(to bottom,#32a852,#dff1ff);
-    }
-
-    section .content {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        z-index: -10;
-        justify-content: center;
-        align-items: center;
-    }
-
-    section .color {
-        position: absolute;
-        filter: blur(200px);
-    }
-
-        section .color:nth-child(1) {
-            z-index: -1;
-            background: #f5ee1d;
-            width: 700px;
-            height: 700px;
-            top: -350px;
-        }
-
-        section .color:nth-child(2) {
-            z-index: -1;
-            background: #1831ed;
-            width: 500px;
-            height: 500px;
-            bottom: 250px;
-            left: 300px;
-        }
-
-        section .color:nth-child(3) {
-            z-index: -1;
-            background: #18e6ed;
-            width: 600px;
-            height: 600px;
-            bottom: 450px;
-            right: 500px;
-        }
-
-    .choice {
-        position: relative;
-        display: flex;
-        align-items: center;
-        z-index: 2;
-    }
-
-    .elchoice {
-        list-style: none;
-        position: relative;
-        top: 5vh;
-        margin: 0 5vh 3vh 5vh;
-        text-align: left;
-    }
-
-    .link {
-        font-size: 4vh !important;
-        font-weight: bold;
-        position: relative;
-        width: 40vh;
-        height: 30vh;
-        display: block;
-        border: 0.2vh solid white;
-        border-radius: 3vh;
-        text-decoration: none;
-        color: white;
-        padding: 2vh;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 5px 45px rgba(102,100,100,0.75);
-        backdrop-filter: blur(2px);
-        background-color: rgba(163, 163, 163, 0.8);
-        transition: 0.5s;
-        overflow: hidden;
-    }
-
-        .link:hover {
-            transform: translateY(-8vh);
-            text-decoration: none !important;
-            color: white !important;
-        }
-
-        .link::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 15vh;
-            height: 100%;
-            background-color: rgba(255,255,255,0.6);
-            transform: skewX(45deg) translateX(60vh);
-            transition: 0.5s;
-        }
-
-        .link:hover::before {
-            transform: skewX(45deg) translateX(-30vh);
-        }
-</style>
-<section class="content">
-    <div class="color"></div>
-    <div class="color"></div>
-    <div class="color"></div>
-
-    <div class="jumbotron">
-        <h1>See otherwise</h1>
-        <p class="lead">
-
-            is an application that allows us to see the world as from another reality. Upload your photos and use any of the available filters and look at them from a different angle.
-        </p>
-
-    </div>
-
-
-    <ul class="choice">
-        <li class="elchoice">
-            <a class="link" href="/Home/Filter1">This is first filter, made by Mariusz Hoang</a>
-        </li>
-        <li class="elchoice">
-            <a class="link" href="/Home/Filter2">This is second filter, made by Marcin Czarnecki</a>
-        </li>
-        <li class="elchoice">
-            <a class="link" href="/Home/Filter3">This is third filter, made by Marcin Krupnik</a>
-        </li>
-    </ul>
-</section>
-
-@{
+﻿@{
     ViewData["Title"] = "Home Page";
 }
+
+
+<div class="jumbotron">
+    <h1>See otherwise</h1>
+    <p class="lead">
+
+        is an application that allows us to see the world as from another reality. Upload your photos and use any of the available filters and look at them from a different angle.
+    </p>
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>First filter</h2>
+        <p>
+            This is first filter, making photo more gray.
+        </p>
+        <h3>@Html.ActionLink("Show Filter1", "Filter1", "Home")</h3>
+    </div>
+    <div class="col-md-4">
+        <h2>Secound filter</h2>
+        <p>
+            This is secount filter
+        </p>
+        <h3>@Html.ActionLink("Show Filter2", "Filter2", "Home")</h3>
+    </div>
+    <div class="col-md-4">
+        <h2>Third filter</h2>
+        <p>
+            This is third filter
+        </p>
+        <h3>@Html.ActionLink("Show Filter3", "Filter3", "Home")</h3>
+    </div>
+</div>

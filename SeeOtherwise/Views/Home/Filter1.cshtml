@@ -1,11 +1,12 @@
 ﻿@model Filter1
+
 @{
     ViewData["Title"] = "Filter1";
 }
 @{
     ViewBag.Title = "Link";
 }
-<!--Developer Form-->
+
 @using (Html.BeginForm("Filter1", "Home", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
@@ -25,6 +26,10 @@
                 <input type="submit" value="Create" class="btn btn-success" />
             </div>
         </div>
+        <div>
+            <img src="@Url.Content(@ViewBag.Photo)" />
+        </div>
+        
     </div>
 }
-   
+
