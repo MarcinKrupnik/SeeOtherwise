@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SeeOtherwise.Models;
 using System;
@@ -86,7 +86,7 @@ namespace SeeOtherwise.Controllers
                0, 0, newBitmap.Width, newBitmap.Height, GraphicsUnit.Pixel, attributes);
 
             //dispose the Graphics object
-            //g.Dispose();
+            g.Dispose();
               static byte[] BitmapToBytes(Image img)
             {
                 using (MemoryStream stream = new MemoryStream())
@@ -131,11 +131,11 @@ namespace SeeOtherwise.Controllers
             ColorMatrix colorMatrix = new ColorMatrix(
                new float[][]
                {
-                new float[] {.3f, .3f, .3f, 0, 0},
-                new float[] {.59f, .59f, .59f, 0, 0},
-                new float[] {.11f, .11f, .11f, 0, 0},
+                new float[] {-1, 0, 0, 0, 0},
+                new float[] {0, -1, 0, 0, 0},
+                new float[] {0, 0, -1, 0, 0},
                 new float[] {0, 0, 0, 1, 0},
-                new float[] {0, 0, 0, 0, 1}
+                new float[] {1, 1, 1, 0, 1}
                });
 
             //create some image attributes
@@ -194,10 +194,10 @@ namespace SeeOtherwise.Controllers
             ColorMatrix colorMatrix = new ColorMatrix(
                new float[][]
                {
-                new float[] {.3f, .3f, .3f, 0, 0},
-                new float[] {.59f, .59f, .59f, 0, 0},
-                new float[] {.11f, .11f, .11f, 0, 0},
-                new float[] {0, 0, 0, 1, 0},
+                new float[] {1.5f, 0 , 0, 0, 0}, // this is for red
+                new float[] {0, 1.4f, 0, 0, 0}, // this is for green
+                new float[] {0, 0, .8f, 0, 0}, // this is for blue
+                new float[] {0, 0, 0, .8f, 0}, // this is alpha
                 new float[] {0, 0, 0, 0, 1}
                });
 
