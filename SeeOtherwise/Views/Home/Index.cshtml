@@ -1,9 +1,11 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    
 }
 
 
-<div class="jumbotron">
+
+<div class="descriptionBox">
     <h1>See otherwise</h1>
     <p class="lead">
 
@@ -11,27 +13,20 @@
     </p>
 
 </div>
+<section class="content">
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <ul class="choice">
+        <li class="elchoice">
+            @Html.ActionLink("Sketch with pencil filter", "Filter1", "Home")
+        </li>
+        <li class="elchoice">
+            @Html.ActionLink("Interwar period film filter", "Filter2", "Home")
+        </li>
+        <li class="elchoice">
+            @Html.ActionLink("Show Filter3", "Filter3", "Home")
+        </li>
+    </ul>
+</section>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>First filter</h2>
-        <p>
-            This is first filter, making photo more gray.
-        </p>
-        <h3>@Html.ActionLink("Show Filter1", "Filter1", "Home")</h3>
-    </div>
-    <div class="col-md-4">
-        <h2>Secound filter</h2>
-        <p>
-            This is secount filter
-        </p>
-        <h3>@Html.ActionLink("Show Filter2", "Filter2", "Home")</h3>
-    </div>
-    <div class="col-md-4">
-        <h2>Third filter</h2>
-        <p>
-            This is third filter
-        </p>
-        <h3>@Html.ActionLink("Show Filter3", "Filter3", "Home")</h3>
-    </div>
-</div>
