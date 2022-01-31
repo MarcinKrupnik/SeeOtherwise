@@ -23,7 +23,7 @@
         </div>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-success" />
+                <input type="submit" id="input" value="Create" class="btn btn-success" />
             </div>
         </div>
         <div>
@@ -31,5 +31,10 @@
         </div>
 
     </div>
+    <script>
+        document.getElementById("input").onclick=function () {
+            document.getElementById("con").style.display = "block";
+        };
+    </script>
 }
 
